@@ -13,8 +13,8 @@ gulp.task('build:dev', ['sass:dev', 'inject']);
 // enable watch for scripts and styles and create js and style in dist/
 gulp.task('watch', ['watch:style']);
 
-// build assets for production
+// build assets for productionc
 // gulp.task('build:prod', ['sass', 'script']);
 
 // run localhost for development
-gulp.task('serve', ['connect', 'inject', 'watch']);
+gulp.task('serve', ['build:dev', 'connect', 'inject', 'watch']);

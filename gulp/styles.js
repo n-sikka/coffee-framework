@@ -31,7 +31,7 @@ gulp.task('sass', function() {
     gutil.log(gutil.colors.bgBlue.red('ERROR : SCSS COMPILATION FAILED'));
   }))
   .pipe(sourcemaps.write('sourcemaps'))
-  .pipe(gulp.dest('dist/css'))
+  .pipe(gulp.dest('src/'))
 });
 
 
@@ -42,7 +42,7 @@ gulp.task('sass:dev', function() {
   .pipe(concat('index.scss'))
   .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write('sourcemaps'))
-  .pipe(gulp.dest('dist/css'))
+  .pipe(gulp.dest('src/'))
 });
 
 
