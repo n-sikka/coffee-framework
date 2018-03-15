@@ -4,6 +4,8 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     sassLint = require('gulp-sass-lint'),
     sourcemaps = require('gulp-sourcemaps');
+    postcss = require('gulp-postcss');
+    autoprefixer = require('gulp-autoprefixer');
 
 var STYLE_PATH = 'src/scss/**/*.scss';
 
@@ -30,6 +32,10 @@ gulp.task('sass', function() {
   .pipe(sass().on('error', function(){
     gutil.log(gutil.colors.bgBlue.red('ERROR : SCSS COMPILATION FAILED'));
   }))
+  .pipe(autoprefixer({
+      browsers: ['last 3 versions'],
+      cascade: false
+  }))
   .pipe(sourcemaps.write('sourcemaps'))
   .pipe(gulp.dest('src/'))
 });
@@ -41,6 +47,10 @@ gulp.task('sass:dev', function() {
   .pipe(sourcemaps.init())
   .pipe(concat('index.scss'))
   .pipe(sass().on('error', sass.logError))
+  .pipe(autoprefixer({
+      browsers: ['last 3 versions'],
+      grid: true
+  }))
   .pipe(sourcemaps.write('sourcemaps'))
   .pipe(gulp.dest('src/'))
 });

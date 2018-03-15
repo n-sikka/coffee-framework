@@ -3,7 +3,7 @@ var gulp = require('gulp');
     es = require('event-stream'),
     inject = require('gulp-inject');
 
-var STYLES_PATH = 'dist/css/index.css'
+var STYLES_PATH = 'src/index.css'
 
 gulp.task('inject', function () {
   var target = gulp.src('index.sample.html');
