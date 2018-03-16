@@ -1,7 +1,45 @@
+/**
+ * This is being used for adding quick css for various screen sizes. variables are in varibles.scss
+ */
+/**
+ * This is being used for adding quick css for various screen sizes. variables are in varibles.scss
+ */
 .d-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  grid-gap: 10px; }
+  .d-grid.autofit {
+    -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); }
+  .d-grid.autofill {
+    -ms-grid-columns: (minmax(10em, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr)); }
+
+.container-sm,
+.container-md,
+.container-lg {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (min-width: 768px) {
+  .container-sm {
+    width: 92%; } }
+
+.column {
+  border: 1px solid grey;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.row {
+  padding: 1em;
+  border: 1px solid black; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-size: 16px; }
 
 /*# sourceMappingURL=sourcemaps/index.css.map */

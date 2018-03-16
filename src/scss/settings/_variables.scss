@@ -1,1 +1,24 @@
-$color: red;
+$base-font-size: 16px;
+
+
+$mobile-sm: 320px;
+$mobile: 425px; //targetting android phones as standard
+$tablet: 768px;
+$desktop: 1366px;
+$super-desktop: 1920px;
+
+
+// GRID VARIABLES
+// row
+
+
+// container
+$container-default-width: 96%;
+$container-lg-width: 96%;
+$container-md-width: 94%;
+$container-sm-width: 92%;
+
+
+// columns
+$col-width-max: 94%;
+$col-width-min: 6.233%;
