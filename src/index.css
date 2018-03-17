@@ -1,3 +1,12 @@
+/*
+ * FONT VARIABLES
+ */
+/*
+ * BREAKPOINTS
+ */
+/*
+ * GRID VARIABLES
+ */
 /**
  * This is being used for adding quick css for various screen sizes. variables are in varibles.scss
  */
@@ -10,14 +19,24 @@
 /**
  * This is being used for adding quick css for various screen sizes. variables are in varibles.scss
  */
-html,
-body {
-  font-size: 16px; }
-
+/*
+ * FONT VARIABLES
+ */
+/*
+ * BREAKPOINTS
+ */
+/*
+ * GRID VARIABLES
+ */
+/*
+ * CONTAINERS
+ */
 .grid-container {
+  display: -ms-grid;
   display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(12, 1fr); }
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr); }
 
 .container {
   width: 96%;
@@ -33,6 +52,9 @@ body {
   .container.xs {
     max-width: 1024px; }
 
+/*
+ * ROW
+ */
 .row {
   position: relative;
   padding: 1rem 0;
@@ -40,41 +62,56 @@ body {
   grid-auto-rows: max-content; }
 
 .row-span-1 {
+  -ms-grid-row-span: 1;
   grid-row-end: span 1; }
 
 .row-span-2 {
+  -ms-grid-row-span: 2;
   grid-row-end: span 2; }
 
 .row-span-3 {
+  -ms-grid-row-span: 3;
   grid-row-end: span 3; }
 
 .row-span-4 {
+  -ms-grid-row-span: 4;
   grid-row-end: span 4; }
 
 .row-span-5 {
+  -ms-grid-row-span: 5;
   grid-row-end: span 5; }
 
 .row-span-6 {
+  -ms-grid-row-span: 6;
   grid-row-end: span 6; }
 
 .row-span-7 {
+  -ms-grid-row-span: 7;
   grid-row-end: span 7; }
 
 .row-span-8 {
+  -ms-grid-row-span: 8;
   grid-row-end: span 8; }
 
 .row-span-9 {
+  -ms-grid-row-span: 9;
   grid-row-end: span 9; }
 
 .row-span-10 {
+  -ms-grid-row-span: 10;
   grid-row-end: span 10; }
 
 .row-span-11 {
+  -ms-grid-row-span: 11;
   grid-row-end: span 11; }
 
 .row-span-12 {
+  -ms-grid-row-span: 12;
   grid-row-end: span 12; }
 
+/*
+ * COLUMNS
+ */
 .col-1,
 .col-2,
 .col-3,
@@ -87,59 +124,38 @@ body {
 .col-10,
 .col-11,
 .col-12 {
+  -ms-grid-column-span: 12;
   grid-column-end: span 12;
   padding: 1rem; }
 
 @media (min-width: 768px) {
   .col-1 {
+    -ms-grid-column-span: 1;
     grid-column-end: span 1; } }
 
 @media (min-width: 768px) {
   .col-2 {
+    -ms-grid-column-span: 2;
     grid-column-end: span 2; } }
 
 @media (min-width: 768px) {
   .col-3 {
+    -ms-grid-column-span: 3;
     grid-column-end: span 3; } }
 
 @media (min-width: 768px) {
   .col-4 {
+    -ms-grid-column-span: 4;
     grid-column-end: span 4; } }
 
 @media (min-width: 768px) {
   .col-5 {
+    -ms-grid-column-span: 5;
     grid-column-end: span 5; } }
 
 @media (min-width: 768px) {
   .col-6 {
-    grid-column-end: span 6; } }
-
-@media (min-width: 768px) {
-  .col-7 {
-    grid-column-end: span 7; } }
-
-@media (min-width: 768px) {
-  .col-8 {
-    grid-column-end: span 8; } }
-
-@media (min-width: 768px) {
-  .col-9 {
-    grid-column-end: span 9; } }
-
-@media (min-width: 768px) {
-  .col-10 {
-    grid-column-end: span 10; } }
-
-@media (min-width: 768px) {
-  .col-11 {
-    grid-column-end: span 11; } }
-
-@media (min-width: 768px) {
-  .col-12 {
-    grid-column-end: span 12; } }
-
-/*# sourceMappingURL=sourcemaps/index.css.map */
--grid-column-span: 6;
+    -ms-grid-column-span: 6;
     grid-column-end: span 6; } }
 
 @media (min-width: 768px) {
@@ -171,5 +187,9 @@ body {
   .col-12 {
     -ms-grid-column-span: 12;
     grid-column-end: span 12; } }
+
+html,
+body {
+  font-size: 16px; }
 
 /*# sourceMappingURL=sourcemaps/index.css.map */

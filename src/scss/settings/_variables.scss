@@ -1,4 +1,12 @@
+/*
+ * FONT VARIABLES
+ */
+
 $base-font-size: 16px;
+
+/*
+ * BREAKPOINTS
+ */
 
 $mobile-sm: 320px;
 $mobile: 425px; //targetting android phones as standard
@@ -7,12 +15,16 @@ $desktop: 1366px;
 $super-desktop: 1920px;
 
 
-// GRID VARIABLES
-// row
+/*
+ * GRID VARIABLES
+ */
+$default-grid-columns: 12;
+$default-grid-gap: 0.5rem;
 
-// container
+// this is the default container width
 $container-width-default: 96%;
 
+// Different container max-widths
 $container-map: (
     'xl': 2560px,
     'lg': 1920px,
