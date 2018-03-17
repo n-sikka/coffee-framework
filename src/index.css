@@ -200,6 +200,10 @@
     -ms-grid-column-span: 12;
     grid-column-end: span 12; } }
 
+html,
+body {
+  font-size: 16px; }
+
 /*
  * GRID HELPERS
  */
@@ -754,11 +758,25 @@
 .visible {
   display: inherit; }
 
+.visible-mobile {
+  display: inherit; }
+
+.visible-tablet {
+  display: inherit; }
+
+.visible-desktop {
+  display: inherit; }
+
 .hidden {
   display: none; }
 
-html,
-body {
-  font-size: 16px; }
+.hidden-mobile {
+  display: none; }
+
+.hidden-tablet {
+  display: none; }
+
+.hidden-desktop {
+  display: none; }
 
 /*# sourceMappingURL=sourcemaps/index.css.map */

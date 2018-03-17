@@ -287,7 +287,25 @@
 .visible {
     display: inherit;
 }
+.visible-mobile {
+    display: inherit;
+}
+.visible-tablet {
+    display: inherit;
+}
+.visible-desktop {
+    display: inherit;
+}
 
 .hidden {
+    display: none;
+}
+.hidden-mobile {
+    display: none;
+}
+.hidden-tablet {
+    display: none;
+}
+.hidden-desktop {
     display: none;
 }
