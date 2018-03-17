@@ -1,39 +1,60 @@
-.d-grid {
+.grid-container {
     display: grid;
-    grid-gap: 10px;
-    &.autofit {
-        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    }
-
-    &.autofill {
-        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-    }
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.container-sm,
-.container-md,
-.container-lg {
-    width: $container-default-width;
-    margin-left: auto;
-    margin-right: auto;
+.container {
+    width: $container-width-default;
+    margin:0 auto;
+
+    @each $container-size-label, $container-size-value in $container-map {
+        &.#{$container-size-label} {
+            max-width: #{$container-size-value};
+        }
+    }    
 }
 
-.container-sm {
-    @include for-screen('above-tablet') {
-        width: $container-sm-width;
-    }
-}
-
-
-// TEMP SHIT
-.column {
-    border: 1px solid grey;
-    align-items: stretch;
-}
 
 .row {
-    padding: 1em;
-    border: 1px solid black;
+    position: relative;
+    padding: 1rem 0;
+    // this makes the row span to the height of the column with maximum content
+    grid-auto-rows: max-content; 
+}
+
+// These classes will span the item applied on 
+// from their initial row position to the value used
+@each $row in $rows {
+    .row-span-#{$row} {
+        grid-row-end: span #{$row}; 
+    }
 }
 
 
+
+// Columns
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    grid-column-end: span 12;
+    padding: 1rem;
+}
+
+
+@each $column in $columns {
+    .col-#{$column} {
+        @include for-screen('above-tablet') {
+            grid-column-end: span #{$column}; 
+        }    
+    }
+}

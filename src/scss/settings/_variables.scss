@@ -1,6 +1,5 @@
 $base-font-size: 16px;
 
-
 $mobile-sm: 320px;
 $mobile: 425px; //targetting android phones as standard
 $tablet: 768px;
@@ -11,14 +10,19 @@ $super-desktop: 1920px;
 // GRID VARIABLES
 // row
 
-
 // container
-$container-default-width: 96%;
-$container-lg-width: 96%;
-$container-md-width: 94%;
-$container-sm-width: 92%;
+$container-width-default: 96%;
 
+$container-map: (
+    'xl': 2560px,
+    'lg': 1920px,
+    'md': 1400px,
+    'sm': 1280px,
+    'xs': 1024px   
+);
 
-// columns
-$col-width-max: 94%;
-$col-width-min: 6.233%;
+// list containing total columns for the grid
+$columns: 1 2 3 4 5 6 7 8 9 10 11 12;
+
+// list containing total rows for the grid
+$rows: 1 2 3 4 5 6 7 8 9 10 11 12;

@@ -1,45 +1,175 @@
 /**
  * This is being used for adding quick css for various screen sizes. variables are in varibles.scss
  */
+.grid-item {
+  border: 1px solid lightblue;
+  background-color: lightblue; }
+  .grid-item:nth-child(even) {
+    background-color: darkcyan; }
+
 /**
  * This is being used for adding quick css for various screen sizes. variables are in varibles.scss
  */
-.d-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px; }
-  .d-grid.autofit {
-    -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); }
-  .d-grid.autofill {
-    -ms-grid-columns: (minmax(10em, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr)); }
-
-.container-sm,
-.container-md,
-.container-lg {
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto; }
-
-@media (min-width: 768px) {
-  .container-sm {
-    width: 92%; } }
-
-.column {
-  border: 1px solid grey;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
-
-.row {
-  padding: 1em;
-  border: 1px solid black; }
-
-html {
-  font-size: 16px; }
-
+html,
 body {
   font-size: 16px; }
+
+.grid-container {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(12, 1fr); }
+
+.container {
+  width: 96%;
+  margin: 0 auto; }
+  .container.xl {
+    max-width: 2560px; }
+  .container.lg {
+    max-width: 1920px; }
+  .container.md {
+    max-width: 1400px; }
+  .container.sm {
+    max-width: 1280px; }
+  .container.xs {
+    max-width: 1024px; }
+
+.row {
+  position: relative;
+  padding: 1rem 0;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content; }
+
+.row-span-1 {
+  grid-row-end: span 1; }
+
+.row-span-2 {
+  grid-row-end: span 2; }
+
+.row-span-3 {
+  grid-row-end: span 3; }
+
+.row-span-4 {
+  grid-row-end: span 4; }
+
+.row-span-5 {
+  grid-row-end: span 5; }
+
+.row-span-6 {
+  grid-row-end: span 6; }
+
+.row-span-7 {
+  grid-row-end: span 7; }
+
+.row-span-8 {
+  grid-row-end: span 8; }
+
+.row-span-9 {
+  grid-row-end: span 9; }
+
+.row-span-10 {
+  grid-row-end: span 10; }
+
+.row-span-11 {
+  grid-row-end: span 11; }
+
+.row-span-12 {
+  grid-row-end: span 12; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  grid-column-end: span 12;
+  padding: 1rem; }
+
+@media (min-width: 768px) {
+  .col-1 {
+    grid-column-end: span 1; } }
+
+@media (min-width: 768px) {
+  .col-2 {
+    grid-column-end: span 2; } }
+
+@media (min-width: 768px) {
+  .col-3 {
+    grid-column-end: span 3; } }
+
+@media (min-width: 768px) {
+  .col-4 {
+    grid-column-end: span 4; } }
+
+@media (min-width: 768px) {
+  .col-5 {
+    grid-column-end: span 5; } }
+
+@media (min-width: 768px) {
+  .col-6 {
+    grid-column-end: span 6; } }
+
+@media (min-width: 768px) {
+  .col-7 {
+    grid-column-end: span 7; } }
+
+@media (min-width: 768px) {
+  .col-8 {
+    grid-column-end: span 8; } }
+
+@media (min-width: 768px) {
+  .col-9 {
+    grid-column-end: span 9; } }
+
+@media (min-width: 768px) {
+  .col-10 {
+    grid-column-end: span 10; } }
+
+@media (min-width: 768px) {
+  .col-11 {
+    grid-column-end: span 11; } }
+
+@media (min-width: 768px) {
+  .col-12 {
+    grid-column-end: span 12; } }
+
+/*# sourceMappingURL=sourcemaps/index.css.map */
+-grid-column-span: 6;
+    grid-column-end: span 6; } }
+
+@media (min-width: 768px) {
+  .col-7 {
+    -ms-grid-column-span: 7;
+    grid-column-end: span 7; } }
+
+@media (min-width: 768px) {
+  .col-8 {
+    -ms-grid-column-span: 8;
+    grid-column-end: span 8; } }
+
+@media (min-width: 768px) {
+  .col-9 {
+    -ms-grid-column-span: 9;
+    grid-column-end: span 9; } }
+
+@media (min-width: 768px) {
+  .col-10 {
+    -ms-grid-column-span: 10;
+    grid-column-end: span 10; } }
+
+@media (min-width: 768px) {
+  .col-11 {
+    -ms-grid-column-span: 11;
+    grid-column-end: span 11; } }
+
+@media (min-width: 768px) {
+  .col-12 {
+    -ms-grid-column-span: 12;
+    grid-column-end: span 12; } }
 
 /*# sourceMappingURL=sourcemaps/index.css.map */

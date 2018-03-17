@@ -1,2 +1,11 @@
 @import './settings/variables';
 @import './settings/mixins';
+
+.grid-item {
+    border: 1px solid lightblue;
+    background-color: lightblue;
+
+    &:nth-child(even) {
+        background-color: darkcyan        
+    }
+}
