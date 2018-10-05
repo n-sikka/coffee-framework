@@ -3,123 +3,123 @@
  */
 
 .d-grid {
-    display: grid;
+    display: grid !important;
 }
 
 .d-subgrid {
-    display: subgrid;
+    display: subgrid !important;
 }
 
 .d-inline-grid {
-    display: inline-grid;
+    display: inline-grid !important;
 }
 
 .justify-item-end {
-    justify-items: end;
+    justify-items: end !important;
 }
 .justify-item-start {
-    justify-items: start;
+    justify-items: start !important;
 }
 .justify-item-center {
-    justify-items: center;
+    justify-items: center !important;
 }
 .justify-item-stretch {
-    justify-items: stretch;    
+    justify-items: stretch !important;    
 }
 
 .justify-content-start {
-    justify-content: start;
+    justify-content: start !important;
 }
 .justify-content-end {
-    justify-content: end;
+    justify-content: end !important;
 }
 .justify-content-center {
-    justify-content: center;
+    justify-content: center !important;
 }
 .justify-content-stretch {
-    justify-content: stretch;
+    justify-content: stretch !important;
 }
 .justify-content-space-around {
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
 .justify-content-space-between {
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 .justify-content-space-evenly {
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
 }
 
 .justify-self-start {
-    justify-self: start;
+    justify-self: start !important;
 }
 .justify-self-end {
-    justify-self: end;
+    justify-self: end !important;
 }
 .justify-self-center {
-    justify-self: center;
+    justify-self: center !important;
 }
 .justify-self-stretch {
-    justify-self: stretch;
+    justify-self: stretch !important;
 }
 
 .align-item-end {
-    align-items: end;
+    align-items: end !important;
 }
 .align-item-start {
-    align-items: start;
+    align-items: start !important;
 }
 .align-item-center {
-    align-items: center;
+    align-items: center !important;
 }
 .align-item-stretch {
-    align-items: stretch;    
+    align-items: stretch !important;    
 }
 
 .align-content-start {
-    align-content: start;
+    align-content: start !important;
 }
 .align-content-end {
-    align-content: end;
+    align-content: end !important;
 }
 .align-content-center {
-    align-content: center;
+    align-content: center !important;
 }
 .align-content-stretch {
-    align-content: stretch;
+    align-content: stretch !important;
 }
 .align-content-space-around {
-    align-content: space-around;
+    align-content: space-around !important;
 }
 .align-content-space-between {
-    align-content: space-between;
+    align-content: space-between !important;
 }
 .align-content-space-evenly {
-    align-content: space-evenly;
+    align-content: space-evenly !important;
 }
 
 .align-self-start {
-    align-self: start;
+    align-self: start !important;
 }
 .align-self-end {
-    align-self: end;
+    align-self: end !important;
 }
 .align-self-center {
-    align-self: center;
+    align-self: center !important;
 }
 .align-self-stretch {
-    align-self: stretch;
+    align-self: stretch !important;
 }
 
 .gutter-size-lg {
-    grid-gap: 2rem;
+    grid-gap: 2rem !important;
 }
 
 .gutter-size-md {
-    grid-gap: 1rem;
+    grid-gap: 1rem !important;
 }
 
 .gutter-size-sm {
-    grid-gap: 0.5rem;
+    grid-gap: 0.5rem !important;
 }
 
 
@@ -129,48 +129,48 @@
 
 @each $space-label, $space-value in $spaces {
     .py-#{$space-label} {
-        padding-top: $space-value;
-        padding-bottom: $space-value;
+        padding-top: $space-value !important;
+        padding-bottom: $space-value !important;
     }
     .px-#{$space-label} {
-        padding-left: $space-value;
-        padding-right: $space-value;
+        padding-left: $space-value !important;
+        padding-right: $space-value !important;
     }
     .pb-#{$space-label} {
-        padding-bottom: $space-value;
+        padding-bottom: $space-value !important;
     }
     .pt-#{$space-label} {
-        padding-top: $space-value;
+        padding-top: $space-value !important;
     }
     .pl-#{$space-label} {
-        padding-left: $space-value;
+        padding-left: $space-value !important;
     }
     .pr-#{$space-label} {
-        padding-right: $space-value;
+        padding-right: $space-value !important;
     }
 
     .m-#{$space-label} {
-        margin: $space-value;
+        margin: $space-value !important;
     }
     .my-#{$space-label} {
-        margin-top: $space-value;
-        margin-bottom: $space-value;
+        margin-top: $space-value !important;
+        margin-bottom: $space-value !important;
     }
     .mx-#{$space-label} {
-        margin-left: $space-value;
-        margin-right: $space-value;
+        margin-left: $space-value !important;
+        margin-right: $space-value !important;
     }
     .mb-#{$space-label} {
-        margin-bottom: $space-value;
+        margin-bottom: $space-value !important;
     }
     .mt-#{$space-label} {
-        margin-top: $space-value;
+        margin-top: $space-value !important;
     }
     .ml-#{$space-label} {
-        margin-left: $space-value;
+        margin-left: $space-value !important;
     }
     .mr-#{$space-label} {
-        margin-right: $space-value;
+        margin-right: $space-value !important;
     }
 }
 
@@ -180,102 +180,103 @@
  */
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 .text-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .text-regular {
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 .text-bold {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 .text-bolder {
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .text-overline {
-    text-decoration: overline;
+    text-decoration: overline !important;
 }
 
 .text-line-through {
-    text-decoration: line-through;
+    text-decoration: line-through !important;
 }
 
 .text-underline {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 
 /*
  * BORDERS
  */
+
 .b-rounded {
-    border-radius: $border-radius;
+    border-radius: $border-radius !important;
 }
 .b-rounded-top {
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
 }
 .b-rounded-right {
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
 }
 .b-rounded-bottom {
-    border-bottom-right-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
 }
 .b-rounded-left {
-    border-top-left-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
 }
 
 .b-rounded-circle {
-    border-radius: 50%;
+    border-radius: 50% !important;
 }
 
 .b-rounded-0 {
-    border-radius: 0;
+    border-radius: 0 !important;
 }
   
 .b-a-0 {
-    border: none;
+    border: none !important;
 }
 .b-a {
-    border: 1px solid $border-color-default;   
+    border: 1px solid $border-color-default !important;   
 }
 .b-b {
-    border-bottom: 1px solid $border-color-default;  
+    border-bottom: 1px solid $border-color-default !important;  
 }
 .b-t {
-    border-top: 1px solid $border-color-default;  
+    border-top: 1px solid $border-color-default !important;  
 }
 .b-l {
-    border-left: 1px solid $border-color-default;  
+    border-left: 1px solid $border-color-default !important;  
 }
 .b-r {
-    border-right: 1px solid $border-color-default;  
+    border-right: 1px solid $border-color-default !important;  
 }
 
 .b-b-0 {
-    border-bottom: none;  
+    border-bottom: none !important;  
 }
 .b-t-0 {
-    border-top: none;  
+    border-top: none !important;  
 }
 .b-l-0 {
-    border-left: none;  
+    border-left: none !important;  
 }
 .b-r-0 {
-    border-right: none;  
+    border-right: none !important;  
 }
 
 
@@ -285,27 +286,27 @@
  */
 
 .visible {
-    display: inherit;
+    display: inherit !important;
 }
 .visible-mobile {
-    display: inherit;
+    display: inherit !important;
 }
 .visible-tablet {
-    display: inherit;
+    display: inherit !important;
 }
 .visible-desktop {
-    display: inherit;
+    display: inherit !important;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 .hidden-mobile {
-    display: none;
+    display: none !important;
 }
 .hidden-tablet {
-    display: none;
+    display: none !important;
 }
 .hidden-desktop {
-    display: none;
+    display: none !important;
 }
